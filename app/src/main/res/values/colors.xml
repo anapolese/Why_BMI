@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="orange_200">#FF6D50</color>
+    <color name="orange_500">#FF4C29</color>
+    <color name="orange_700">#FB421E</color>
+    <color name="deep_blue_200">#334756</color>
+    <color name="pretty_girl_500">#2C394B</color>
+    <color name="deep_blue_700">#082032</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

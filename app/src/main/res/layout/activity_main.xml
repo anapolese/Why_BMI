@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_blue_700"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcomeMessage"
+        style="@style/titleMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/appTitle"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14" />
+
+    <Button
+        android:id="@+id/calculateBtn"
+        style="@style/bodyText"
+        android:layout_width="182dp"
+        android:layout_height="67dp"
+        android:text="@string/calculateBtn"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heightInput"
+        app:layout_constraintVertical_bias="0.196"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/kgInput"
+        style="@style/bodyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/kgInput"
+        android:importantForAutofill="no"
+        android:inputType="number|numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHighlight="#F44336"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeMessage"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/heightInput"
+        style="@style/bodyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/heightInput"
+        android:importantForAutofill="no"
+        android:inputType="number|numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHighlight="#F44336"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kgInput"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <TextView
+        android:id="@+id/resultsBMI"
+        style="@style/bodyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculateBtn"
+        app:layout_constraintVertical_bias="0.23" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/helpButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:clickable="true"
+        android:contentDescription="@string/help_button"
+        android:focusable="true"
+        app:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/welcomeMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148"
+        app:srcCompat="@android:drawable/ic_menu_help"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

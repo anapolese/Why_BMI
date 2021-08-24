@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Why BMI</string>
+    <string name="appTitle">Why BMI?</string>
+    <string name="kgInput">Weight (e.g: 45)</string>
+    <string name="heightInput">Height (e.g: 1.78)</string>
+    <string name="calculateBtn">Calculate</string>
+    <string name="help_button">Help Button</string>
+    <string name="bmi_info">What my bmi tells me?</string>
+</resources>
